@@ -1,0 +1,717 @@
+.administrators-page {
+  min-height: 100vh;
+  background: #f5f9fd;
+  padding: 32px 40px;
+  color: #1f2937;
+}
+
+/* Header */
+
+.administrators-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.administrators-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.administrators-back {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid #dfe8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #597085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.administrators-back:hover {
+  color: #0878d1;
+  border-color: #bcd9ed;
+}
+
+.administrators-eyebrow {
+  margin: 0 0 5px;
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+.administrators-header h1 {
+  margin: 0;
+  color: #173f63;
+  font-size: 27px;
+}
+
+.administrators-header p:last-child {
+  margin: 7px 0 0;
+  color: #77899a;
+  font-size: 13px;
+}
+
+.add-administrator-button {
+  border: none;
+  border-radius: 9px;
+  background: #0878d1;
+  color: #ffffff;
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(8, 120, 209, 0.18);
+}
+
+.add-administrator-button:hover {
+  background: #0668b8;
+}
+
+/* Municipality */
+
+.administrator-municipality-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 14px;
+  padding: 18px 21px;
+  margin-bottom: 18px;
+}
+
+.administrator-banner-icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.administrator-municipality-banner span {
+  color: #7b8d9f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.administrator-municipality-banner h2 {
+  margin: 3px 0 2px;
+  color: #244965;
+  font-size: 18px;
+}
+
+.administrator-municipality-banner p {
+  margin: 0;
+  color: #8292a1;
+  font-size: 12px;
+}
+
+/* Statistics */
+
+.administrator-statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.administrator-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.administrator-stat-icon {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.administrator-stat-card span {
+  display: block;
+  color: #81919f;
+  font-size: 10px;
+}
+
+.administrator-stat-card strong {
+  display: block;
+  margin-top: 3px;
+  color: #244965;
+  font-size: 19px;
+}
+
+/* Toolbar */
+
+.administrator-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 12px;
+  padding: 13px;
+  margin-bottom: 18px;
+}
+
+.administrator-search {
+  flex: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  padding: 0 11px;
+  color: #8193a1;
+}
+
+.administrator-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #354f64;
+  font-size: 12px;
+}
+
+.administrator-filter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.administrator-filter label {
+  color: #657c8d;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.administrator-filter select {
+  height: 40px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  padding: 0 10px;
+  color: #425e73;
+  background: #ffffff;
+  outline: none;
+  font-size: 10px;
+}
+
+/* Content */
+
+.administrators-content {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.administrators-content-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 19px 20px;
+  border-bottom: 1px solid #edf2f6;
+}
+
+.administrators-content-heading h2 {
+  margin: 0;
+  color: #244965;
+  font-size: 17px;
+}
+
+.administrators-content-heading p:last-child {
+  margin: 4px 0 0;
+  color: #8292a1;
+  font-size: 10px;
+}
+
+.administrators-content-heading > span {
+  color: #718699;
+  font-size: 10px;
+}
+
+/* Table */
+
+.administrators-table-wrapper {
+  overflow-x: auto;
+}
+
+.administrators-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+}
+
+.administrators-table th {
+  text-align: left;
+  padding: 12px 17px;
+  background: #f8fafc;
+  color: #718699;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8eef3;
+}
+
+.administrators-table td {
+  padding: 14px 17px;
+  border-bottom: 1px solid #edf2f6;
+  vertical-align: middle;
+}
+
+.administrators-table tbody tr:hover {
+  background: #fbfdff;
+}
+
+.administrator-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.administrator-avatar {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.administrator-person strong {
+  display: block;
+  color: #38576d;
+  font-size: 11px;
+}
+
+.administrator-person span,
+.administrator-person small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #81919f;
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+.administrator-person small {
+  color: #98a6b1;
+}
+
+.administrator-type {
+  color: #4b667a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.administrator-department {
+  color: #718699;
+  font-size: 10px;
+}
+
+.administrator-last-login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #718699;
+  font-size: 9px;
+}
+
+.administrator-active,
+.administrator-disabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 15px;
+  padding: 5px 8px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.administrator-active {
+  color: #218653;
+  background: #eaf8f0;
+}
+
+.administrator-disabled {
+  color: #b54848;
+  background: #fceeee;
+}
+
+.administrator-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.administrator-actions button {
+  width: 31px;
+  height: 31px;
+  border: 1px solid #dce6ee;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.administrator-actions button:hover {
+  background: #f3f9fd;
+}
+
+.administrator-actions .administrator-delete {
+  color: #c34b4b;
+}
+
+.administrator-actions .administrator-delete:hover {
+  background: #fff3f3;
+}
+
+/* Empty */
+
+.administrator-empty {
+  padding: 55px 20px;
+  text-align: center;
+  color: #8292a1;
+}
+
+.administrator-empty svg {
+  color: #0878d1;
+}
+
+.administrator-empty h3 {
+  margin: 12px 0 5px;
+  color: #49667c;
+  font-size: 14px;
+}
+
+.administrator-empty p {
+  margin: 0;
+  font-size: 10px;
+}
+
+/* Security */
+
+.administrator-security-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #eef7fd;
+  border: 1px solid #d8eaf7;
+  border-radius: 13px;
+  padding: 17px 19px;
+  margin-top: 18px;
+}
+
+.administrator-security-icon {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.administrator-security-notice h3 {
+  margin: 0;
+  color: #31536c;
+  font-size: 12px;
+}
+
+.administrator-security-notice p {
+  margin: 5px 0 0;
+  color: #718699;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Modal */
+
+.administrator-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(24, 53, 75, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.administrator-modal {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(20, 50, 70, 0.2);
+}
+
+.administrator-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 21px 22px;
+  border-bottom: 1px solid #e9eff4;
+}
+
+.administrator-modal-header h2 {
+  margin: 0;
+  color: #244965;
+  font-size: 19px;
+}
+
+.administrator-modal-header p:last-child {
+  margin: 5px 0 0;
+  color: #8292a1;
+  font-size: 10px;
+}
+
+.close-administrator-modal {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #f3f6f8;
+  color: #647b8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.administrator-form {
+  padding: 21px 22px;
+}
+
+.administrator-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.administrator-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.administrator-form-field label {
+  color: #49667c;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.administrator-form-field input,
+.administrator-form-field select {
+  width: 100%;
+  height: 41px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #354f64;
+  padding: 0 11px;
+  outline: none;
+  font-size: 11px;
+}
+
+.administrator-form-field input:focus,
+.administrator-form-field select:focus {
+  border-color: #0878d1;
+}
+
+/* Password notice */
+
+.administrator-password-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 17px;
+  padding: 12px;
+  background: #eef7fd;
+  border: 1px solid #d8eaf7;
+  border-radius: 9px;
+  color: #0878d1;
+}
+
+.administrator-password-notice p {
+  margin: 0;
+  color: #718699;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Form actions */
+
+.administrator-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  border-top: 1px solid #edf2f6;
+  margin-top: 21px;
+  padding-top: 17px;
+}
+
+.cancel-administrator-button,
+.save-administrator-button {
+  height: 39px;
+  border-radius: 8px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cancel-administrator-button {
+  border: 1px solid #dce6ee;
+  background: #ffffff;
+  color: #617889;
+}
+
+.save-administrator-button {
+  border: none;
+  background: #0878d1;
+  color: #ffffff;
+}
+
+.save-administrator-button:hover {
+  background: #0668b8;
+}
+
+/* Reset */
+
+.reset-access-modal {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(20, 50, 70, 0.2);
+}
+
+.reset-access-icon {
+  width: 51px;
+  height: 51px;
+  margin: 0 auto 13px;
+  border-radius: 12px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-access-modal h2 {
+  margin: 0;
+  color: #244965;
+  font-size: 18px;
+}
+
+.reset-access-modal p {
+  margin: 8px 0 3px;
+  color: #8292a1;
+  font-size: 11px;
+}
+
+.reset-access-modal > strong {
+  color: #49667c;
+  font-size: 11px;
+}
+
+.reset-access-actions {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 21px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .administrators-page {
+    padding: 24px 18px;
+  }
+
+  .administrators-header {
+    flex-direction: column;
+  }
+
+  .add-administrator-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .administrator-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .administrator-search {
+    flex-basis: 100%;
+  }
+
+  .administrator-statistics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .administrator-municipality-banner {
+    align-items: flex-start;
+  }
+
+  .administrator-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .administrator-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-administrator-button,
+  .save-administrator-button {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,708 @@
+.service-areas-page {
+  min-height: 100vh;
+  background: #f5f9fd;
+  padding: 32px 40px;
+  color: #1f2937;
+}
+
+/* Header */
+
+.service-areas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.service-areas-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.service-areas-back {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid #dfe8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #597085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.service-areas-back:hover {
+  color: #0878d1;
+  border-color: #bcd9ed;
+}
+
+.service-areas-eyebrow {
+  margin: 0 0 5px;
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+.service-areas-header h1 {
+  margin: 0;
+  color: #173f63;
+  font-size: 27px;
+}
+
+.service-areas-header p:last-child {
+  margin: 7px 0 0;
+  color: #77899a;
+  font-size: 13px;
+}
+
+.add-service-area-button {
+  border: none;
+  border-radius: 9px;
+  background: #0878d1;
+  color: #ffffff;
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(8, 120, 209, 0.18);
+}
+
+.add-service-area-button:hover {
+  background: #0668b8;
+}
+
+/* Municipality */
+
+.service-area-municipality-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 14px;
+  padding: 18px 21px;
+  margin-bottom: 18px;
+}
+
+.service-area-banner-icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-area-municipality-banner span {
+  color: #7b8d9f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.service-area-municipality-banner h2 {
+  margin: 3px 0 2px;
+  color: #244965;
+  font-size: 18px;
+}
+
+.service-area-municipality-banner p {
+  margin: 0;
+  color: #8292a1;
+  font-size: 12px;
+}
+
+/* Statistics */
+
+.service-area-statistics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.service-area-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.service-area-stat-icon {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-area-stat-card span {
+  display: block;
+  color: #81919f;
+  font-size: 10px;
+}
+
+.service-area-stat-card strong {
+  display: block;
+  margin-top: 3px;
+  color: #244965;
+  font-size: 19px;
+}
+
+/* Toolbar */
+
+.service-area-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 12px;
+  padding: 13px;
+  margin-bottom: 18px;
+}
+
+.service-area-search {
+  flex: 1;
+  max-width: 480px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  padding: 0 11px;
+  color: #8193a1;
+}
+
+.service-area-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #354f64;
+  font-size: 12px;
+}
+
+.service-area-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-area-filter label {
+  color: #657c8d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.service-area-filter select {
+  height: 40px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  padding: 0 10px;
+  color: #425e73;
+  background: #ffffff;
+  outline: none;
+  font-size: 11px;
+}
+
+/* Content */
+
+.service-area-content {
+  background: transparent;
+}
+
+.service-area-content-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 13px;
+}
+
+.service-area-content-heading h2 {
+  margin: 0;
+  color: #244965;
+  font-size: 18px;
+}
+
+.service-area-content-heading p:last-child {
+  margin: 5px 0 0;
+  color: #8292a1;
+  font-size: 11px;
+}
+
+.service-area-result-count {
+  color: #6e8494;
+  font-size: 11px;
+}
+
+/* Cards */
+
+.service-area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.service-area-card {
+  background: #ffffff;
+  border: 1px solid #e0e9f0;
+  border-radius: 13px;
+  padding: 17px;
+  transition: 0.2s ease;
+}
+
+.service-area-card:hover {
+  border-color: #bfd9eb;
+  box-shadow: 0 5px 16px rgba(34, 82, 116, 0.06);
+}
+
+.service-area-disabled {
+  opacity: 0.7;
+}
+
+.service-area-card-top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.service-area-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #eaf5fd;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-area-code {
+  color: #6f8495;
+  background: #f1f6f9;
+  border-radius: 6px;
+  padding: 5px 7px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.service-area-active,
+.service-area-inactive {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 15px;
+  padding: 5px 7px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.service-area-active {
+  background: #eaf8f0;
+  color: #218653;
+}
+
+.service-area-inactive {
+  background: #fceeee;
+  color: #b54848;
+}
+
+.service-area-card-title {
+  margin-top: 15px;
+}
+
+.service-area-card-title h3 {
+  margin: 0;
+  color: #31536c;
+  font-size: 17px;
+}
+
+.service-area-card-title p {
+  margin: 4px 0 0;
+  color: #8292a1;
+  font-size: 10px;
+}
+
+/* Card statistics */
+
+.service-area-card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  border-top: 1px solid #edf2f6;
+  border-bottom: 1px solid #edf2f6;
+  margin: 15px 0 12px;
+  padding: 12px 0;
+}
+
+.service-area-card-stats > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  color: #0878d1;
+}
+
+.service-area-card-stats span {
+  color: #7f909e;
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.service-area-card-stats strong {
+  display: block;
+  color: #3d5a6e;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+/* Services */
+
+.service-area-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.service-area-services span {
+  color: #7f909e;
+  font-size: 10px;
+}
+
+.service-area-services strong {
+  color: #3d5a6e;
+  font-size: 10px;
+}
+
+/* Actions */
+
+.service-area-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 40px;
+  gap: 7px;
+}
+
+.service-area-actions button {
+  height: 34px;
+  border: 1px solid #dce6ee;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.service-area-actions button:hover {
+  background: #f3f9fd;
+}
+
+.service-area-actions .delete-area-button {
+  color: #c34b4b;
+}
+
+.service-area-actions .delete-area-button:hover {
+  background: #fff3f3;
+}
+
+/* Empty */
+
+.service-area-empty {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 13px;
+  padding: 50px 20px;
+  text-align: center;
+  color: #8b9ba7;
+}
+
+.service-area-empty svg {
+  color: #0878d1;
+}
+
+.service-area-empty h3 {
+  margin: 12px 0 5px;
+  color: #49667c;
+  font-size: 15px;
+}
+
+.service-area-empty p {
+  margin: 0;
+  font-size: 11px;
+}
+
+/* Notice */
+
+.service-area-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #eef7fd;
+  border: 1px solid #d8eaf7;
+  border-radius: 13px;
+  padding: 17px 19px;
+  margin-top: 18px;
+}
+
+.service-area-notice-icon {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-area-notice h3 {
+  margin: 0;
+  color: #31536c;
+  font-size: 12px;
+}
+
+.service-area-notice p {
+  margin: 5px 0 0;
+  color: #718699;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Modal */
+
+.service-area-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(24, 53, 75, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.service-area-modal {
+  width: 100%;
+  max-width: 620px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(20, 50, 70, 0.2);
+}
+
+.service-area-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 21px 22px;
+  border-bottom: 1px solid #e9eff4;
+}
+
+.service-area-modal-header h2 {
+  margin: 0;
+  color: #244965;
+  font-size: 19px;
+}
+
+.service-area-modal-header p:last-child {
+  margin: 5px 0 0;
+  color: #8292a1;
+  font-size: 10px;
+}
+
+.close-modal-button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #f3f6f8;
+  color: #647b8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-modal-button:hover {
+  background: #e8eef2;
+}
+
+.service-area-form {
+  padding: 21px 22px;
+}
+
+.service-area-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.service-area-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.service-area-form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.service-area-form-field label {
+  color: #49667c;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.service-area-form-field input,
+.service-area-form-field select {
+  width: 100%;
+  height: 41px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #354f64;
+  padding: 0 11px;
+  outline: none;
+  font-size: 11px;
+}
+
+.service-area-form-field input:focus,
+.service-area-form-field select:focus {
+  border-color: #0878d1;
+}
+
+.service-area-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  border-top: 1px solid #edf2f6;
+  margin-top: 21px;
+  padding-top: 17px;
+}
+
+.cancel-area-button,
+.save-area-button {
+  height: 39px;
+  border-radius: 8px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cancel-area-button {
+  border: 1px solid #dce6ee;
+  background: #ffffff;
+  color: #617889;
+}
+
+.save-area-button {
+  border: none;
+  background: #0878d1;
+  color: #ffffff;
+}
+
+.save-area-button:hover {
+  background: #0668b8;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .service-area-statistics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-area-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .service-areas-page {
+    padding: 24px 18px;
+  }
+
+  .service-areas-header {
+    flex-direction: column;
+  }
+
+  .add-service-area-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service-area-statistics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-area-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .service-area-search {
+    max-width: none;
+  }
+
+  .service-area-filter {
+    justify-content: space-between;
+  }
+
+  .service-area-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .service-area-statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .service-area-municipality-banner {
+    align-items: flex-start;
+  }
+
+  .service-area-card-stats {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .service-area-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-area-form-field.full-width {
+    grid-column: auto;
+  }
+}

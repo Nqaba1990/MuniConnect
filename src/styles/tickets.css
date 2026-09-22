@@ -1,0 +1,304 @@
+.tickets-page {
+  min-height: 100vh;
+  background: #f5f8fc;
+  padding-bottom: 40px;
+}
+
+.tickets-header {
+  height: 78px;
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background: linear-gradient(
+    90deg,
+    #123d7a,
+    #087fe5
+  );
+
+  color: white;
+}
+
+.tickets-header h1 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.tickets-header p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.tickets-back {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  cursor: pointer;
+}
+
+.tickets-content {
+  width: min(850px, 92%);
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* SUMMARY */
+
+.ticket-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: white;
+
+  border: 1px solid #e1eaf4;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 30px;
+}
+
+.summary-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #e9f4ff;
+  color: #087fe5;
+}
+
+.ticket-summary div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-summary strong {
+  font-size: 18px;
+  color: #123d7a;
+}
+
+.ticket-summary span {
+  margin-top: 4px;
+  color: #718096;
+  font-size: 13px;
+}
+
+/* LIST */
+
+.tickets-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.tickets-title h2 {
+  margin: 0;
+  color: #123d7a;
+  font-size: 21px;
+}
+
+.tickets-title span {
+  min-width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #087fe5;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* TICKET CARD */
+
+.ticket-card {
+  position: relative;
+
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  padding: 20px;
+
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid #e1eaf4;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(15,55,100,0.1);
+}
+
+.ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ticket-top > svg {
+  color: #087fe5;
+}
+
+.ticket-service {
+  font-size: 12px;
+  color: #087fe5;
+  font-weight: 700;
+}
+
+.ticket-card h3 {
+  margin: 5px 0 0;
+
+  font-size: 18px;
+
+  color: #173b6d;
+}
+
+.ticket-description {
+  margin: 12px 0;
+
+  color: #718096;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.ticket-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #edf1f5;
+}
+
+.ticket-id {
+  color: #123d7a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ticket-date {
+  color: #8a98a9;
+  font-size: 12px;
+}
+
+.ticket-status {
+  position: absolute;
+
+  top: 18px;
+  right: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ticket-status.new {
+  background: #fff6d8;
+  color: #9a7100;
+}
+
+.ticket-status.in-progress {
+  background: #e8f3ff;
+  color: #087fe5;
+}
+
+.ticket-status.resolved {
+  background: #e9f8ed;
+  color: #31964a;
+}
+
+/* NEW REPORT */
+
+.new-report-button {
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 14px;
+
+  border: 1px solid #087fe5;
+  border-radius: 12px;
+
+  background: white;
+
+  color: #087fe5;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.new-report-button:hover {
+  background: #f0f8ff;
+}
+
+@media (max-width: 600px) {
+
+  .tickets-header {
+    padding: 0 20px;
+  }
+
+  .tickets-content {
+    width: 94%;
+  }
+
+  .ticket-status {
+    position: static;
+
+    width: fit-content;
+
+    margin-top: 12px;
+  }
+
+  .ticket-bottom {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

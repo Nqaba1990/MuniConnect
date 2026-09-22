@@ -1,0 +1,711 @@
+.admin-reports-page {
+  min-height: 100vh;
+  padding: 28px;
+  background: #f5f9fd;
+  color: #172033;
+}
+
+.admin-reports-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.admin-reports-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-reports-back {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dbe5ef;
+  border-radius: 12px;
+  background: #fff;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.admin-reports-back:hover {
+  background: #f0f6fc;
+}
+
+.admin-reports-breadcrumb {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.admin-reports-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.admin-reports-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-reports-export {
+  height: 42px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 10px;
+  background: #1261a0;
+  color: #fff;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.admin-reports-export:hover {
+  background: #0e5289;
+}
+
+/* Municipality */
+
+.admin-reports-municipality {
+  background: #fff;
+  border: 1px solid #dce6f0;
+  border-radius: 15px;
+  padding: 15px 18px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.admin-reports-municipality-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #e8f3fb;
+  color: #1261a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-reports-municipality strong {
+  display: block;
+  font-size: 14px;
+}
+
+.admin-reports-municipality span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.admin-reports-scope {
+  margin-left: auto;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #edf8f1;
+  color: #18723d;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+/* Filters */
+
+.admin-reports-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #dce6f0;
+  border-radius: 15px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.admin-reports-filter {
+  display: grid;
+  grid-template-columns: 20px auto 1fr;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+}
+
+.admin-reports-filter label {
+  font-size: 12px;
+  font-weight: 650;
+  color: #475569;
+}
+
+.admin-reports-filter select {
+  height: 39px;
+  min-width: 0;
+  border: 1px solid #d7e1eb;
+  border-radius: 9px;
+  padding: 0 9px;
+  background: #fff;
+  color: #334155;
+  outline: none;
+}
+
+/* Summary */
+
+.admin-reports-summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.admin-report-summary-card {
+  background: #fff;
+  border: 1px solid #dce6f0;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.admin-report-summary-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-report-summary-icon.tickets {
+  background: #edf4fb;
+  color: #1261a0;
+}
+
+.admin-report-summary-icon.open {
+  background: #fff8e5;
+  color: #9a6b00;
+}
+
+.admin-report-summary-icon.progress {
+  background: #eef2ff;
+  color: #5146a5;
+}
+
+.admin-report-summary-icon.resolved {
+  background: #edf8f1;
+  color: #18723d;
+}
+
+.admin-report-summary-icon.urgent {
+  background: #fff0ed;
+  color: #c74732;
+}
+
+.admin-report-summary-icon.time {
+  background: #f1edff;
+  color: #6246a5;
+}
+
+.admin-report-summary-card span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.admin-report-summary-card strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 21px;
+}
+
+.admin-report-summary-card small {
+  display: block;
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+/* Panels */
+
+.admin-reports-panel {
+  background: #fff;
+  border: 1px solid #dce6f0;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.admin-reports-panel-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e8eef4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #1261a0;
+}
+
+.admin-reports-panel-header h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 17px;
+}
+
+.admin-reports-panel-header p {
+  margin: 4px 0 0;
+  color: #718096;
+  font-size: 11px;
+}
+
+/* Service report */
+
+.admin-service-report-list {
+  padding: 6px 20px 14px;
+}
+
+.admin-service-report-row {
+  min-height: 65px;
+  display: grid;
+  grid-template-columns: 205px minmax(100px, 1fr) 80px 80px 90px;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.admin-service-report-row:last-child {
+  border-bottom: 0;
+}
+
+.admin-service-report-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-service-report-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-service-report-icon.water {
+  background: #e9f6fb;
+  color: #087ca4;
+}
+
+.admin-service-report-icon.sewerage {
+  background: #eef2ff;
+  color: #4f46a5;
+}
+
+.admin-service-report-icon.electricity,
+.admin-service-report-icon.eskom {
+  background: #fff8dc;
+  color: #9a6b00;
+}
+
+.admin-service-report-icon.refuse {
+  background: #edf8f1;
+  color: #287a4a;
+}
+
+.admin-service-report-icon.fire {
+  background: #fff0ed;
+  color: #c74732;
+}
+
+.admin-service-report-name strong {
+  display: block;
+  font-size: 12px;
+}
+
+.admin-service-report-name span {
+  display: block;
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.admin-service-report-bar {
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #edf2f7;
+}
+
+.admin-service-report-bar div {
+  height: 100%;
+  border-radius: inherit;
+  background: #1261a0;
+  min-width: 5px;
+}
+
+.admin-service-report-value {
+  text-align: right;
+}
+
+.admin-service-report-value strong {
+  display: block;
+  font-size: 12px;
+}
+
+.admin-service-report-value span {
+  display: block;
+  color: #94a3b8;
+  font-size: 9px;
+  margin-top: 2px;
+}
+
+.admin-service-report-value.urgent strong {
+  color: #c74732;
+}
+
+/* Two columns */
+
+.admin-reports-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* SLA */
+
+.admin-sla-content {
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.admin-sla-ring {
+  width: 145px;
+  height: 145px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    #18723d 0deg,
+    #18723d 240deg,
+    #f0b429 240deg,
+    #f0b429 305deg,
+    #d86b5d 305deg,
+    #d86b5d 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-sla-ring-inner {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-sla-ring-inner strong {
+  font-size: 27px;
+}
+
+.admin-sla-ring-inner span {
+  color: #94a3b8;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.admin-sla-legend {
+  flex: 1;
+}
+
+.admin-sla-legend > div {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.admin-sla-legend > div:last-child {
+  border-bottom: 0;
+}
+
+.sla-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.sla-dot.within {
+  background: #18723d;
+}
+
+.sla-dot.approaching {
+  background: #f0b429;
+}
+
+.sla-dot.breached {
+  background: #d86b5d;
+}
+
+.admin-sla-legend span:not(.sla-dot) {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.admin-sla-legend strong {
+  font-size: 11px;
+}
+
+/* Areas */
+
+.admin-area-report-list {
+  padding: 7px 20px 14px;
+}
+
+.admin-area-report-row {
+  padding: 13px 0;
+  border-bottom: 1px solid #eef2f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-area-report-row:last-child {
+  border-bottom: 0;
+}
+
+.admin-area-report-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1261a0;
+}
+
+.admin-area-report-info strong {
+  color: #334155;
+  font-size: 12px;
+}
+
+.admin-area-report-stats {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.admin-area-report-stats span {
+  padding: 4px 7px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 9px;
+}
+
+.admin-area-report-stats span.resolved {
+  background: #edf8f1;
+  color: #18723d;
+}
+
+.admin-area-report-stats span.open {
+  background: #fff8e5;
+  color: #956900;
+}
+
+/* Technician table */
+
+.admin-technician-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-technician-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-technician-table th {
+  padding: 12px 20px;
+  text-align: left;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-technician-table td {
+  padding: 13px 20px;
+  border-top: 1px solid #eef2f6;
+  color: #475569;
+  font-size: 11px;
+}
+
+.admin-technician-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.admin-technician-name > div {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e8f3fb;
+  color: #1261a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-technician-name strong {
+  color: #334155;
+  font-size: 12px;
+}
+
+.admin-table-success {
+  color: #18723d;
+  font-weight: 700;
+}
+
+/* Footer note */
+
+.admin-reports-footer-note {
+  border: 1px solid #cfe3f2;
+  background: #f1f8fd;
+  color: #1261a0;
+  border-radius: 12px;
+  padding: 13px 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.admin-reports-footer-note strong {
+  display: block;
+  font-size: 12px;
+}
+
+.admin-reports-footer-note span {
+  display: block;
+  margin-top: 3px;
+  color: #547086;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+
+@media (max-width: 1250px) {
+  .admin-reports-summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .admin-service-report-row {
+    grid-template-columns:
+      180px
+      minmax(80px, 1fr)
+      70px
+      70px
+      80px;
+  }
+}
+
+@media (max-width: 950px) {
+  .admin-reports-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-reports-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-service-report-row {
+    grid-template-columns: 180px 1fr 65px 65px;
+  }
+
+  .admin-service-report-row
+    .admin-service-report-value:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-reports-page {
+    padding: 18px;
+  }
+
+  .admin-reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-reports-export {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-reports-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-service-report-list {
+    overflow-x: auto;
+  }
+
+  .admin-service-report-row {
+    min-width: 650px;
+  }
+
+  .admin-sla-content {
+    flex-direction: column;
+  }
+
+  .admin-area-report-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-reports-scope {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-reports-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-reports-header h1 {
+    font-size: 24px;
+  }
+
+  .admin-reports-municipality {
+    align-items: flex-start;
+  }
+
+  .admin-reports-filter {
+    grid-template-columns: 20px 1fr;
+  }
+
+  .admin-reports-filter select {
+    grid-column: 1 / -1;
+  }
+}

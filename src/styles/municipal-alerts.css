@@ -1,0 +1,751 @@
+.municipal-alerts-page {
+  min-height: 100vh;
+  padding: 28px;
+  background: #f5f9fd;
+}
+
+.municipal-alerts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.municipal-alerts-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.municipal-alerts-back-button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d9e3ee;
+  border-radius: 10px;
+  background: white;
+  color: #1f4f82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.municipal-alerts-back-button:hover {
+  background: #eef6ff;
+}
+
+.municipal-alerts-breadcrumb {
+  color: #718096;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.municipal-alerts-header h1 {
+  margin: 0;
+  color: #163a63;
+  font-size: 28px;
+}
+
+.municipal-alerts-header p {
+  margin: 6px 0 0;
+  color: #68788a;
+  font-size: 14px;
+}
+
+.municipal-alerts-primary-button {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: #1769aa;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.municipal-alerts-primary-button:hover {
+  background: #12588e;
+}
+
+.municipal-alerts-secondary-button {
+  border: 1px solid #d5dfeb;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: white;
+  color: #40556b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.municipal-alerts-secondary-button:hover {
+  background: #f5f8fb;
+}
+
+.municipal-alerts-municipality-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #dce6f0;
+  border-radius: 12px;
+}
+
+.municipal-alerts-municipality-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #e9f3ff;
+  color: #1769aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.municipal-alerts-municipality-card span,
+.municipal-alerts-code span {
+  display: block;
+  color: #8190a0;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.municipal-alerts-municipality-card strong,
+.municipal-alerts-code strong {
+  color: #203b57;
+}
+
+.municipal-alerts-code {
+  margin-left: auto;
+  padding-left: 30px;
+  border-left: 1px solid #e1e8ef;
+}
+
+.municipal-alerts-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.municipal-alert-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: white;
+  border: 1px solid #dce6f0;
+  border-radius: 12px;
+  padding: 17px;
+}
+
+.municipal-alert-stat-card span {
+  display: block;
+  color: #7b8998;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.municipal-alert-stat-card strong {
+  font-size: 23px;
+  color: #1f3e5d;
+}
+
+.municipal-alert-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.municipal-alert-stat-icon.total {
+  background: #eaf3ff;
+  color: #1769aa;
+}
+
+.municipal-alert-stat-icon.published {
+  background: #e9f8ef;
+  color: #23804b;
+}
+
+.municipal-alert-stat-icon.scheduled {
+  background: #fff7e8;
+  color: #a26d18;
+}
+
+.municipal-alert-stat-icon.expired {
+  background: #edf1f5;
+  color: #68788a;
+}
+
+.municipal-alert-stat-icon.urgent {
+  background: #fff0f0;
+  color: #c44343;
+}
+
+.municipal-alerts-panel {
+  background: white;
+  border: 1px solid #dce6f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.municipal-alerts-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e5ebf1;
+}
+
+.municipal-alerts-panel-header h2 {
+  margin: 0;
+  color: #1f3e5d;
+  font-size: 19px;
+}
+
+.municipal-alerts-panel-header p {
+  margin: 5px 0 0;
+  color: #7b8998;
+  font-size: 13px;
+}
+
+.municipal-alert-result-count {
+  color: #1769aa;
+  background: #eef6ff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.municipal-alerts-filters {
+  display: grid;
+  grid-template-columns: 1fr 180px 180px;
+  gap: 10px;
+  padding: 16px 20px;
+  background: #f9fbfd;
+  border-bottom: 1px solid #e5ebf1;
+}
+
+.municipal-alerts-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  background: white;
+  border: 1px solid #d7e1eb;
+  border-radius: 8px;
+  color: #8796a5;
+}
+
+.municipal-alerts-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  color: #273f56;
+}
+
+.municipal-alerts-filters select {
+  border: 1px solid #d7e1eb;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+  color: #40556b;
+  outline: none;
+}
+
+.municipal-alerts-list {
+  padding: 4px 20px 20px;
+}
+
+.municipal-alert-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.municipal-alert-card:last-child {
+  border-bottom: 0;
+}
+
+.municipal-alert-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  min-width: 0;
+}
+
+.municipal-alert-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #eaf3ff;
+  color: #1769aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.municipal-alert-content {
+  min-width: 0;
+}
+
+.municipal-alert-title-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.municipal-alert-title-row h3 {
+  margin: 0;
+  color: #203b57;
+  font-size: 15px;
+}
+
+.municipal-alert-content p {
+  margin: 7px 0;
+  color: #657789;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.municipal-alert-meta {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  color: #8996a4;
+  font-size: 10px;
+}
+
+.municipal-alert-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.municipal-alert-priority {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.priority-low {
+  background: #edf1f5;
+  color: #68788a;
+}
+
+.priority-medium {
+  background: #fff7e8;
+  color: #9a6a16;
+}
+
+.priority-high {
+  background: #fff0e0;
+  color: #b15c18;
+}
+
+.priority-urgent {
+  background: #fff0f0;
+  color: #c44343;
+}
+
+.municipal-alert-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.municipal-alert-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.status-published {
+  background: #eaf8ef;
+  color: #247447;
+}
+
+.status-scheduled {
+  background: #fff7e8;
+  color: #9a6a16;
+}
+
+.status-draft {
+  background: #edf1f5;
+  color: #68788a;
+}
+
+.status-expired {
+  background: #f1f1f1;
+  color: #858585;
+}
+
+.municipal-alert-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.municipal-alert-action {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dbe4ed;
+  border-radius: 7px;
+  background: white;
+  color: #557089;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.municipal-alert-action:hover {
+  background: #edf6ff;
+  color: #1769aa;
+}
+
+.municipal-alert-action.danger:hover {
+  background: #fff1f1;
+  color: #c44343;
+}
+
+.municipal-alerts-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 60px 20px;
+  color: #8996a4;
+}
+
+.municipal-alerts-empty strong {
+  color: #40556b;
+}
+
+.municipal-alerts-empty span {
+  font-size: 12px;
+}
+
+.municipal-alerts-notice {
+  display: flex;
+  gap: 13px;
+  margin-top: 20px;
+  padding: 17px 19px;
+  background: #fff8e8;
+  border: 1px solid #f0dfb3;
+  border-radius: 10px;
+  color: #8b681e;
+}
+
+.municipal-alerts-notice > div:first-child {
+  flex-shrink: 0;
+}
+
+.municipal-alerts-notice strong {
+  color: #735612;
+  font-size: 13px;
+}
+
+.municipal-alerts-notice p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.municipal-alerts-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 35, 55, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.municipal-alerts-modal {
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(20, 45, 70, 0.2);
+}
+
+.municipal-alerts-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 22px;
+  border-bottom: 1px solid #e5ebf1;
+}
+
+.municipal-alerts-modal-header h2 {
+  margin: 0;
+  color: #1f3e5d;
+}
+
+.municipal-alerts-modal-header p {
+  margin: 5px 0 0;
+  color: #7b8998;
+  font-size: 13px;
+}
+
+.municipal-alerts-close {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 7px;
+  background: #f1f5f8;
+  color: #657789;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.municipal-alerts-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 22px;
+}
+
+.municipal-alert-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.municipal-alert-form-field.full {
+  grid-column: 1 / -1;
+}
+
+.municipal-alert-form-field label {
+  color: #3d5369;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.municipal-alert-form-field label span {
+  color: #d34b4b;
+}
+
+.municipal-alert-form-field input,
+.municipal-alert-form-field select,
+.municipal-alert-form-field textarea {
+  width: 100%;
+  border: 1px solid #d5e0ea;
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: #30485f;
+  outline: none;
+  background: white;
+  resize: vertical;
+}
+
+.municipal-alert-form-field input:focus,
+.municipal-alert-form-field select:focus,
+.municipal-alert-form-field textarea:focus {
+  border-color: #4b91c8;
+  box-shadow: 0 0 0 3px rgba(75, 145, 200, 0.1);
+}
+
+.municipal-alerts-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 22px;
+  border-top: 1px solid #e5ebf1;
+  background: #fafcfe;
+}
+
+.municipal-alert-preview {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(20, 45, 70, 0.2);
+}
+
+.municipal-alert-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #eef6ff;
+}
+
+.municipal-alert-preview-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: white;
+  color: #1769aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.municipal-alert-preview-body {
+  padding: 24px;
+}
+
+.municipal-alert-preview-body h2 {
+  margin: 14px 0 10px;
+  color: #1f3e5d;
+}
+
+.municipal-alert-preview-body > p {
+  margin: 0;
+  color: #607286;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.preview-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.preview-details div {
+  padding: 12px;
+  background: #f7fafd;
+  border: 1px solid #e2eaf2;
+  border-radius: 8px;
+}
+
+.preview-details span {
+  display: block;
+  color: #8996a4;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.preview-details strong {
+  display: block;
+  color: #40556b;
+  font-size: 11px;
+}
+
+.municipal-alert-preview-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px 22px;
+  border-top: 1px solid #e5ebf1;
+  background: #fafcfe;
+}
+
+@media (max-width: 1200px) {
+  .municipal-alerts-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .municipal-alerts-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .municipal-alerts-header
+    .municipal-alerts-primary-button {
+    width: 100%;
+  }
+
+  .municipal-alerts-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .municipal-alerts-card {
+    flex-direction: column;
+  }
+
+  .municipal-alert-right {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .municipal-alerts-page {
+    padding: 16px;
+  }
+
+  .municipal-alerts-header h1 {
+    font-size: 22px;
+  }
+
+  .municipal-alerts-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .municipal-alerts-municipality-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .municipal-alerts-code {
+    width: 100%;
+    margin-left: 63px;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .municipal-alerts-form {
+    grid-template-columns: 1fr;
+  }
+
+  .municipal-alert-form-field.full {
+    grid-column: auto;
+  }
+
+  .preview-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .municipal-alerts-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .municipal-alert-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .municipal-alert-right {
+    align-items: flex-start;
+  }
+}
