@@ -24,6 +24,8 @@ import AgentTicketDetails from "../pages/agent/TicketDetails";
 
 // Technician
 import TechnicianDashboard from "../pages/technician/Dashboard";
+import TechnicianJobDetails from "../pages/technician/JobDetails";
+import TechnicianJobHistory from "../pages/technician/JobHistory";
 
 // Developer / Super Admin
 import DeveloperDashboard from "../pages/developer/Dashboard";
@@ -153,6 +155,16 @@ function AppRoutes() {
         path="/technician/dashboard"
         element={<TechnicianDashboard />}
       />
+
+      <Route
+  path="/technician/jobs/:jobId"
+  element={<TechnicianJobDetails />}
+/>
+
+<Route
+  path="/technician/job-history"
+  element={<TechnicianJobHistory />}
+/>
 
       {/* =========================
           DEVELOPER / SUPER ADMIN
